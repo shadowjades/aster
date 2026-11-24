@@ -63,18 +63,26 @@ Aster 把这些信息组织成相互关联的工作流：项目承载多次实�
 
 AI 不会在后台自动读取或上传资料。只有点击对应 AI 功能时，应用才会把该功能所需的文本内容发送到你配置的模型服务。API Key 不会写入工作区备份；模型服务商的数据处理和计费规则由对应服务商决定。
 
+#### 5. 快速收集、浏览器采集与 Zotero
+
+- “快速收集”适合先记下想法、问题、待办或论文线索；之后可关联项目并整理，或删除不再需要的条目。
+- 插件市场提供浏览器采集扩展。按软件内向导打开浏览器扩展管理页，加载随软件提供的扩展文件夹并完成配对；在论文网页使用扩展采集后，到研迹检查并整理收到的条目。浏览器和版本不同，首次加载步骤可能略有差异。
+- Zotero 用户可在“设置 → 数据管理 → Zotero”连接正在运行的 Zotero，扫描文献、集合和可访问的附件。默认通过文件路径引用原 PDF，不复制文件；移动或改名附件后可重新扫描关联。
+- 需要将资料迁入研迹时，可选中 Zotero 条目后使用资料规整，将附件复制进研迹资料库并验证复制结果。复制前可查看预计占用；原 Zotero 文件保持不变。
+
+#### 6. 本地资料、设置与备份
+
+- 在“设置 → 数据管理”查看或更改科研资料库位置、导出备份、恢复备份、管理局域网同步或连接 Zotero。首次安装时也可选择资料库位置。
+- 在“设置 → 常规”切换中英文和外观；外观可以跟随 Windows 系统设置。AI 接口和模型在“设置 → AI 接口”配置。
+- 应用启动时会自动检查新版本；也可在“设置 → 更新”手动检查。发现新版本后可查看更新说明、安装包大小和下载进度。
+- 工作区 JSON 备份包括项目、实验、论文、计划、附件和相关记录；API Key 不写入备份。换电脑时先安装研迹，再恢复备份。
+- 卸载时可选择是否保留科研资料库。保留后重新安装可继续使用原资料；仍建议额外保存一份备份。
+
 #### 7. 反馈与建议
 
-- 可在软件设置中连接 GitHub，并直接提交问题或功能建议，无需另开网页。
+- 在“设置 → 反馈与建议”连接 GitHub 后，可直接提交问题或功能建议。
 - 提交前会提示内容将公开显示；仅发送你填写的反馈及应用、系统版本，不附带实验记录、论文、日志或 API Key。
-- 授权可随时断开；反馈通过后可从软件打开对应的 GitHub Issue。
-
-#### 6. 本地数据与备份
-
-- Aster 是本地优先的桌面工具，不要求注册 Aster 账户，也不依赖 Aster 云服务器。
-- 项目、论文、计划和附件保存在本机工作区中；你可以使用工作区备份迁移或恢复资料。
-- 可导出工作区 JSON 备份；备份包括附件，不包括 API Key。换电脑时，在新设备安装后使用“恢复工作区备份”迁入资料。
-- 建议定期导出备份，并将备份文件保存在安全位置。
+- 可随时断开授权，也可从软件打开已提交的 GitHub Issue。
 
 ### 典型工作流
 
@@ -154,18 +162,26 @@ Configure DeepSeek, Doubao, OpenAI/GPT, Grok, or another OpenAI-compatible servi
 
 AI does not read or upload your research in the background. Text required for a specific task is sent to the model service you configured only after you click the related AI action. API keys are excluded from workspace backups. Data handling and billing are determined by the selected provider.
 
+#### 5. Quick Capture, browser capture, and Zotero
+
+- Use **Quick Capture** to save an idea, question, to-do, or paper lead before you have time to organize it. Later, link it to a project and organize it, or remove it.
+- The Plugin Marketplace provides a browser capture extension. Follow the in-app guide to open the browser’s extensions page, load the bundled extension folder, and pair it. After capturing a paper page, review and organize the entry in Aster. Initial loading steps may vary by browser and version.
+- Zotero users can connect to a running Zotero installation from **Settings → Data Management → Zotero** and scan its papers, collections, and accessible attachments. By default Aster links to the original PDF path without copying it. Rescan the links after moving or renaming attachments.
+- To bring files into Aster’s workspace, select Zotero items and use **Organize files** to copy attachments into the Aster library and verify the copies. You can review the estimated storage first; original Zotero files are left untouched.
+
+#### 6. Local workspace, settings, and backups
+
+- Open **Settings → Data Management** to view or change the workspace location, export or restore a backup, configure LAN sync, or connect Zotero. You can also choose the workspace location during first-run setup.
+- Use **Settings → General** to change the interface language and appearance. Appearance can follow Windows settings. Configure providers and models under **Settings → AI**.
+- Aster checks for updates at startup; you can also check manually in **Settings → Updates**. Available releases show notes, installer size, and download progress.
+- A JSON workspace backup includes projects, experiments, papers, plans, attachments, and related records. API keys are excluded. To move to another computer, install Aster and restore the backup.
+- During uninstall, choose whether to keep the workspace. Keeping it lets a later installation reuse the data; an additional backup is still recommended.
+
 #### 7. Feedback and suggestions
 
-- Connect GitHub in Settings to submit a bug report or feature request from the app.
+- Connect GitHub under **Settings → Feedback** to submit a bug report or feature request from the app.
 - The app explains that submissions are public. It sends only your feedback and app/OS versions—not experiment records, papers, logs, or API keys.
-- You can disconnect authorization at any time and open the submitted GitHub Issue from the app.
-
-#### 6. Local data and backups
-
-- Aster is a local-first desktop tool. It requires no Aster account and does not depend on an Aster cloud server.
-- Projects, papers, plans, and attachments are kept in the local workspace. Use workspace backups to migrate or restore your data.
-- Export a JSON workspace backup to include your records and attachments. API keys are excluded. To move to another computer, install Aster there and restore the backup.
-- Export backups regularly and keep them in a safe location.
+- Disconnect authorization at any time, or open a submitted GitHub Issue from Aster.
 
 ### Suggested workflow
 
