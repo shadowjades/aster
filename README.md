@@ -63,10 +63,16 @@ Aster 把这些信息组织成相互关联的工作流：项目承载多次实�
 
 AI 不会在后台自动读取或上传资料。只有点击对应 AI 功能时，应用才会把该功能所需的文本内容发送到你配置的模型服务。API Key 不会写入工作区备份；模型服务商的数据处理和计费规则由对应服务商决定。
 
+#### 7. 反馈与建议
+
+- 可在软件设置中连接 GitHub，并直接提交问题或功能建议，无需另开网页。
+- 提交前会提示内容将公开显示；仅发送你填写的反馈及应用、系统版本，不附带实验记录、论文、日志或 API Key。
+- 授权可随时断开；反馈通过后可从软件打开对应的 GitHub Issue。
+
 #### 6. 本地数据与备份
 
-- Aster 是本地桌面工具，不要求注册 Aster 账户，也不依赖 Aster 云服务器。
-- 项目、论文和计划保存在当前电脑上的应用数据中，附件保存在本机浏览器存储中。
+- Aster 是本地优先的桌面工具，不要求注册 Aster 账户，也不依赖 Aster 云服务器。
+- 项目、论文、计划和附件保存在本机工作区中；你可以使用工作区备份迁移或恢复资料。
 - 可导出工作区 JSON 备份；备份包括附件，不包括 API Key。换电脑时，在新设备安装后使用“恢复工作区备份”迁入资料。
 - 建议定期导出备份，并将备份文件保存在安全位置。
 
@@ -85,10 +91,10 @@ AI 不会在后台自动读取或上传资料。只有点击对应 AI 功能时�
 
 ### 当前范围与说明
 
-- 当前版本面向 Windows 桌面使用，采用本地单用户工作区；暂不提供云同步或多人协作。
+- 当前版本面向 Windows 64 位桌面。可选用局域网配对，让多台电脑轮流编辑并同步工作区；不提供云同步或多人同时编辑。
 - 论文导入面向文本型 PDF。扫描版 PDF 的 OCR 识别能力有限，需人工补充或确认正文。
 - 每周 PDF 通过报告页面打印/保存生成；正式分享前请自行检查内容。
-- 数据目录直接剪切迁移的完整工作流尚未接通。目前跨设备迁移请使用“导出工作区备份 → 新电脑安装 → 恢复工作区备份”。
+- 多电脑日常同步可使用“设置 → 数据管理 → 局域网同步”配对设备；迁移或离线备份可使用“导出工作区备份 → 新电脑安装 → 恢复工作区备份”。
 - AI 功能需要用户自行配置模型 API。模型服务的费用、可用额度及隐私策略以服务商说明为准。
 
 ### 仓库内容
@@ -148,10 +154,16 @@ Configure DeepSeek, Doubao, OpenAI/GPT, Grok, or another OpenAI-compatible servi
 
 AI does not read or upload your research in the background. Text required for a specific task is sent to the model service you configured only after you click the related AI action. API keys are excluded from workspace backups. Data handling and billing are determined by the selected provider.
 
+#### 7. Feedback and suggestions
+
+- Connect GitHub in Settings to submit a bug report or feature request from the app.
+- The app explains that submissions are public. It sends only your feedback and app/OS versions—not experiment records, papers, logs, or API keys.
+- You can disconnect authorization at any time and open the submitted GitHub Issue from the app.
+
 #### 6. Local data and backups
 
-- Aster is a local desktop tool. It does not require an Aster account or depend on an Aster cloud server.
-- Projects, papers, and plans are kept in the current computer’s application data; attachments use local browser storage.
+- Aster is a local-first desktop tool. It requires no Aster account and does not depend on an Aster cloud server.
+- Projects, papers, plans, and attachments are kept in the local workspace. Use workspace backups to migrate or restore your data.
 - Export a JSON workspace backup to include your records and attachments. API keys are excluded. To move to another computer, install Aster there and restore the backup.
 - Export backups regularly and keep them in a safe location.
 
@@ -170,10 +182,10 @@ Visit [GitHub Releases](https://github.com/shadowjades/aster/releases) for insta
 
 ### Current scope
 
-- The current version targets the Windows desktop and a single local user. Cloud sync and multi-user collaboration are not currently provided.
+- The current release targets 64-bit Windows. Optional LAN pairing lets multiple computers take turns editing and syncing a workspace; cloud sync and simultaneous multi-user editing are not provided.
 - Paper import is designed for text-based PDFs. OCR support for scanned PDFs is limited; verify or provide paper text manually when needed.
 - Weekly PDF export is produced through the report page’s print/save flow. Review the document before sharing.
-- Directly moving the data directory between computers is not yet available. For now, use **Export workspace backup → Install on the new computer → Restore workspace backup**.
+- For routine multi-computer use, pair devices through **Settings → Data Management → LAN Sync**. For migration or offline backup, use **Export workspace backup → Install on the new computer → Restore workspace backup**.
 - AI features require your own model API configuration. Provider fees, quotas, and privacy terms are set by the provider.
 
 ### Repository contents
